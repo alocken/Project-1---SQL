@@ -16,4 +16,25 @@ SELECT  *
 FROM    all_sessions
 ```
 
+**I used this query to filter invalid entries (example is 'cities' column in the 'all_sessions' table):**
 
+```
+SELECT 
+
+```
+
+**I used this query to remove duplicates from tables (example demostrates query for 'analytics' table removing duplicates within visitid):**
+
+```
+SELECT DISTINCT     visitid
+FROM                analytics
+```
+
+**I used this query to locate missing values (example demostrates query for locating missing 'country' column values under 'all_sessions' table):**
+
+SELECT  *
+FROM    all_sessions
+WHERE   country IS NULL
+
+
+**I used this query to replace null values with an alternative default value (example demostrates query for                       ):**
