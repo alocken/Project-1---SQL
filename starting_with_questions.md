@@ -167,11 +167,112 @@ There are a few noteworthy patterns observed when viewing the results from the q
 
 SQL Queries:
 
+*Top-selling product from each city:*
+
+```
+WITH CTE as (
+	SELECT  a.city, 
+		    CAST(a.v2productname AS TEXT) AS productname, 
+		    SUM(CAST(p.orderedquantity AS NUMERIC)) AS orderedquantity, 
+		    ROW_NUMBER() OVER (PARTITION BY a.city ORDER BY SUM(CAST(p.orderedquantity AS NUMERIC)) DESC)AS RANK
+	FROM    all_sessions a
+	JOIN    products p
+		    ON 	a.productsku = p.sku
+	WHERE   CAST(p.orderedquantity AS NUMERIC)<> 0 
+            AND a.city<> 'not available in demo dataset' 
+            AND a.city<> '(not set)' 
+            AND a.v2productcategory<> '(not set)'
+	GROUP BY a.city, a.v2productname
+	ORDER BY city ASC, orderedquantity DESC
+)
+SELECT city, productname, orderedquantity
+FROM CTE
+WHERE RANK = 1
+ORDER BY city;
+```
+Extra Step: top selling product by ordered quanitty to determine highest selling city: 
+
+```
+WITH CTE as (
+	SELECT  a.city, 
+		    CAST(a.v2productname AS TEXT) AS productname, 
+		    SUM(CAST(p.orderedquantity AS NUMERIC)) AS orderedquantity, 
+		    ROW_NUMBER() OVER (PARTITION BY a.city ORDER BY SUM(CAST(p.orderedquantity AS NUMERIC)) DESC)AS RANK
+	FROM    all_sessions a
+	JOIN    products p
+		    ON 	a.productsku = p.sku
+	WHERE   CAST(p.orderedquantity AS NUMERIC)<> 0 
+            AND a.city<> 'not available in demo dataset' 
+            AND a.city<> '(not set)' 
+            AND a.v2productcategory<> '(not set)'
+	GROUP BY a.city, a.v2productname
+	ORDER BY city ASC, orderedquantity DESC
+)
+SELECT city, productname, orderedquantity
+FROM CTE
+WHERE RANK = 1
+ORDER BY orderedquantity DESC;
+```
+
+*Top-selling product from each country:*
+
+```
+WITH CTE as (
+	SELECT  a.country, 
+		    CAST(a.v2productname AS TEXT) AS productname, 
+		    SUM(CAST(p.orderedquantity AS NUMERIC)) AS orderedquantity, 
+		    ROW_NUMBER() OVER (PARTITION BY a.country ORDER BY SUM(CAST(p.orderedquantity AS NUMERIC)) DESC)AS RANK
+	FROM    all_sessions a
+	JOIN    products p
+		    ON 	a.productsku = p.sku
+	WHERE   CAST(p.orderedquantity AS NUMERIC)<> 0 
+            AND a.country<> 'not available in demo dataset' 
+            AND a.country<> '(not set)' 
+            AND a.v2productcategory<> '(not set)'
+	GROUP BY a.country, a.v2productname
+	ORDER BY country ASC, orderedquantity DESC
+)
+SELECT country, productname, orderedquantity
+FROM CTE
+WHERE RANK = 1
+ORDER BY country;
+```
+Extra Step: top selling product by ordered quanitty to determine highest selling country: 
+
+```
+WITH CTE as (
+	SELECT  a.country, 
+		    CAST(a.v2productname AS TEXT) AS productname, 
+		    SUM(CAST(p.orderedquantity AS NUMERIC)) AS orderedquantity, 
+		    ROW_NUMBER() OVER (PARTITION BY a.country ORDER BY SUM(CAST(p.orderedquantity AS NUMERIC)) DESC)AS RANK
+	FROM    all_sessions a
+	JOIN    products p
+		    ON 	a.productsku = p.sku
+	WHERE   CAST(p.orderedquantity AS NUMERIC)<> 0 
+            AND a.country<> 'not available in demo dataset' 
+            AND a.country<> '(not set)' 
+            AND a.v2productcategory<> '(not set)'
+	GROUP BY a.country, a.v2productname
+	ORDER BY country ASC, orderedquantity DESC
+)
+SELECT country, productname, orderedquantity
+FROM CTE
+WHERE RANK = 1
+ORDER BY orderedquantity DESC;
+```
 
 
 Answer:
 
+Patterns worth noting in the products sold:
+1) Significant representation of Google products in the top rank for many cities 
+2) Significant representation of YoutTibe products in the top rank for many countries 
+3) Of all cities, Mountainview had the highest ordered quantity of all cities with the productname Nest Cam Indoor Security Camera - USA. 
+4) Of all countries, United States had the highest ordered quantity of all countries with the productname Google Kick Ball.
 
+![alt text](image-7.png)
+
+![alt text](image-6.png)
 
 
 
