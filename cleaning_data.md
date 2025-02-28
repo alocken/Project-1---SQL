@@ -38,3 +38,5 @@ WHERE   country IS NULL
 
 
 **I used this query to replace null values with an alternative default value (example demostrates query for                       ):**
+
+insert null replace for city names under all_sessions table
