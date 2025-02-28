@@ -190,7 +190,7 @@ FROM CTE
 WHERE RANK = 1
 ORDER BY city;
 ```
-Extra Step: top selling product by ordered quanitty to determine highest selling city: 
+Extra Step: top selling product by ordered quantity to determine highest selling city: 
 
 ```
 WITH CTE as (
@@ -237,7 +237,7 @@ FROM CTE
 WHERE RANK = 1
 ORDER BY country;
 ```
-Extra Step: top selling product by ordered quanitty to determine highest selling country: 
+Extra Step: top selling product by ordered quantity to determine highest selling country: 
 
 ```
 WITH CTE as (
@@ -273,6 +273,10 @@ Patterns worth noting in the products sold:
 ![alt text](image-7.png)
 
 ![alt text](image-6.png)
+
+![alt text](image-9.png)
+
+![alt text](image-8.png)
 
 
 
