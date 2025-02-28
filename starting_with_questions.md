@@ -111,13 +111,56 @@ Answer:
 
 SQL Queries:
 
+*Types (product categories) of products ordered from visitors in each city:*
+```
+SELECT  a.city, 
+	    CAST(a.v2productcategory AS TEXT) AS producttypes, 
+	    SUM(CAST(p.orderedquantity AS NUMERIC)) AS orderedquantity,
+	    CASE
+		    WHEN a.v2productcategory= '${escCatTitle}' THEN 'Cat'
+		    ELSE a.v2productcategory
+	    END AS producttypes1
+FROM    all_sessions a
+JOIN    products p
+	    ON 	a.productsku = p.sku
+WHERE   CAST(p.orderedquantity AS NUMERIC)<> 0 
+            AND a.city<> 'not available in demo dataset' 
+            AND a.city<> '(not set)' 
+            AND a.v2productcategory<> '(not set)'
+GROUP BY a.city, a.v2productcategory
+ORDER BY producttypes1 ASC, orderedquantity DESC;
+```
 
+*Types (product categories) of products ordered from visitors in each country:*
+```
+SELECT 	a.country, 
+	    CAST(a.v2productcategory AS TEXT) AS producttypes, 
+	    SUM(CAST(p.orderedquantity AS NUMERIC)) AS orderedquantity,
+	    CASE
+		    WHEN a.v2productcategory= '${escCatTitle}' THEN 'Cat'
+		    ELSE a.v2productcategory
+	    END AS producttypes1
+FROM    all_sessions a
+JOIN    products p
+	    ON 	a.productsku = p.sku
+WHERE   CAST(p.orderedquantity AS NUMERIC)<> 0 
+            AND a.country<> 'not available in demo dataset' 
+            AND a.country<> '(not set)' 
+            AND a.v2productcategory<> '(not set)'
+GROUP BY a.country, a.v2productcategory
+ORDER BY producttypes1 ASC, orderedquantity DESC;
+```
 
 Answer:
 
+There are a few noteworthy patterns observed when viewing the results from the queries returning the types of products ordered from visitors in each country:
+1) Almost all cities have home product types in the products ordered.
+2) United states is the highest volume orders per product type for almost all categories listed indicating the United States is the higest consumer of ordered products from this particular site.
+3) Significant volume of product types in 'Home' product types while other product types observed to be realtively limitedlimited or low in comparison.
 
+![alt text](image-4.png)
 
-
+![alt text](image-5.png)
 
 **Question 4: What is the top-selling product from each city/country? Can we find any pattern worthy of noting in the products sold?**
 
