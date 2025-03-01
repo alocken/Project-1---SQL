@@ -261,16 +261,17 @@ WHERE RANK = 1
 ORDER BY orderedquantity DESC;
 ```
 
-
 Answer:
 
 Patterns worth noting in the products sold:
-1) Significant representation of Google products in the top rank for many cities 
+1) Significant representation of Google and YouTube products in the top rank for many cities 
 2) Significant representation of YoutTibe products in the top rank for many countries 
 3) Of all cities, Mountainview had the highest ordered quantity of all cities with the productname Nest Cam Indoor Security Camera - USA. 
 4) Of all countries, United States had the highest ordered quantity of all countries with the productname Google Kick Ball.
+5) Nest Cam Indoor Security Camera - USA & Google Kick Ball are top product names ordered for all cities. 
+6) Google Kick Ball and Youtube Custom Decals are top product names ordered for all countries.
 
-![alt text](image-7.png)
+![alt text](image-11.png)
 
 ![alt text](image-6.png)
 
