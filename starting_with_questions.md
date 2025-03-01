@@ -293,10 +293,10 @@ SELECT 	a.city,
             CAST((
                 CAST(a.productprice AS NUMERIC)/ 1000000)*
                 CAST(p.orderedquantity AS NUMERIC) AS NUMERIC)), '99999999999.00') AS impactrevenue,
-		CASE
-			WHEN city = 'not available in demo dataset' THEN 'City Unavailable'
+        CASE
+            WHEN city = 'not available in demo dataset' THEN 'City Unavailable'
             WHEN city = '(not set)' THEN 'City Unavailable'
-			ELSE city
+        ELSE city
 		END AS city1
 FROM 	all_sessions a
 JOIN 	sales_report s
