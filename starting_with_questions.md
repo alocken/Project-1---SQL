@@ -289,7 +289,10 @@ SQL Queries:
 ```
 SELECT 	a.city,
 		TO_CHAR(
-            SUM(CAST((CAST(a.productprice AS NUMERIC)/ 1000000)*CAST(p.orderedquantity AS NUMERIC)AS NUMERIC)), '99999999999.00') AS impactrevenue,
+            SUM(
+            CAST((
+                CAST(a.productprice AS NUMERIC)/ 1000000)*
+                CAST(p.orderedquantity AS NUMERIC) AS NUMERIC)), '99999999999.00') AS impactrevenue,
 		CASE
 			WHEN city = 'not available in demo dataset' THEN 'City Unavailable'
             WHEN city = '(not set)' THEN 'City Unavailable'
@@ -297,9 +300,9 @@ SELECT 	a.city,
 		END AS city1
 FROM 	all_sessions a
 JOIN 	sales_report s
-		ON 		a.productsku = s.productsku
+		ON a.productsku = s.productsku
 JOIN 	products p 
-		ON 		s.restockingleadtime = p.restockingleadtime
+		ON s.restockingleadtime = p.restockingleadtime
 GROUP BY a.city
 ORDER BY impactrevenue DESC;
 
@@ -309,23 +312,26 @@ ORDER BY impactrevenue DESC;
 ```
 SELECT 	a.country,
 		TO_CHAR(
-            SUM(CAST((CAST(a.productprice AS NUMERIC)/ 1000000)*CAST(p.orderedquantity AS NUMERIC)AS NUMERIC)), '99999999999.00') AS impactrevenue,
+            SUM(
+                CAST((
+                    CAST(a.productprice AS NUMERIC)/ 1000000)*
+                    CAST(p.orderedquantity AS NUMERIC)AS NUMERIC)), '99999999999.00') AS impactrevenue,
 		CASE
 			WHEN country = '(not set)' THEN 'Country Unavailable'
 			ELSE country
 		END AS country1
 FROM 	all_sessions a
 JOIN 	sales_report s
-		ON 		a.productsku = s.productsku
+		ON a.productsku = s.productsku
 JOIN 	products p 
-		ON 		s.restockingleadtime = p.restockingleadtime
+		ON s.restockingleadtime = p.restockingleadtime
 GROUP BY a.country
 ORDER BY impactrevenue DESC;
 ```
 
 Answer:
 
-Yes, we can summarize the impact revenue from each city/country by generating the total revenue. The higher the revenue for a city/country, the assumption would be that there is a greater impact revenue. This would also depend on the overal revenue of a country. For example, if a country is quite small and has a signficant amount of revenue there may be a greater impact than a country that is vast with significant revenue also have the same significant amount of revenue. These additional considerations or parameters are not fully known or possible to determine in this dataset but we are able to generate a table the demonstrates revenue for each country is descending order. It can be observed that the United States is the highest impact revenue, given the limitations in data, and the city with the highest is actually unavailble. Given the volume of revenue in the unknown city, it can be assumed it is within the United States but unable to confirm. 
+Yes, we can summarize the impact revenue from each city/country by generating the total revenue. The higher the revenue for a city/country, the assumption would be that there is a greater impact revenue. This would also depend on the overall revenue of a country. For example, if a country is quite small and has a signficant amount of revenue, there may be a greater impact than a country that is vast with significant revenue also having the same significant amount of revenue. These additional considerations, or parameters, are not fully known or possible to determine in this dataset but we are able to generate a table the demonstrates revenue for each country in descending order. It can be observed that the United States has the highest impact revenue, given the limitations in data, and the city with the highest revenue is actually unavailable. Given the volume of revenue in the unknown city, it can be assumed it is within the United States but this is not possible to confirm. 
 
 ![alt text](image-12.png)
 
