@@ -20,9 +20,9 @@ SELECT 	a.city,
 	END AS city1
 FROM 	all_sessions a
 JOIN 	sales_report s
-		ON 		a.productsku = s.productsku
+		ON a.productsku = s.productsku
 JOIN 	products p 
-		ON 		s.restockingleadtime = p.restockingleadtime
+		ON s.restockingleadtime = p.restockingleadtime
 GROUP BY a.city 
 ORDER BY transactionrevenue DESC;
 ```
@@ -40,9 +40,9 @@ SELECT 	a.country,
 	END AS country1
 FROM 	all_sessions a
 JOIN 	sales_report s
-		ON 		a.productsku = s.productsku
+		ON a.productsku = s.productsku
 JOIN 	products p 
-		ON 		s.restockingleadtime = p.restockingleadtime
+		ON s.restockingleadtime = p.restockingleadtime
 GROUP BY a.country 
 ORDER BY transactionrevenue DESC;
 ```
@@ -73,7 +73,7 @@ SELECT  a.city,
 	END AS city1
 FROM    all_sessions a
 JOIN    sales_report s
-        ON  a.productsku = s.productsku
+        ON a.productsku = s.productsku
 GROUP BY a.city
 ORDER BY averageordered DESC;
 ```
@@ -122,7 +122,7 @@ SELECT  a.city,
 	    END AS producttypes1
 FROM    all_sessions a
 JOIN    products p
-	    ON 	a.productsku = p.sku
+	    ON a.productsku = p.sku
 WHERE   CAST(p.orderedquantity AS NUMERIC)<> 0 
             AND a.city<> 'not available in demo dataset' 
             AND a.city<> '(not set)' 
@@ -142,7 +142,7 @@ SELECT 	a.country,
 	    END AS producttypes1
 FROM    all_sessions a
 JOIN    products p
-	    ON 	a.productsku = p.sku
+	    ON a.productsku = p.sku
 WHERE   CAST(p.orderedquantity AS NUMERIC)<> 0 
             AND a.country<> 'not available in demo dataset' 
             AND a.country<> '(not set)' 
@@ -177,7 +177,7 @@ WITH CTE as (
 		    ROW_NUMBER() OVER (PARTITION BY a.city ORDER BY SUM(CAST(p.orderedquantity AS NUMERIC)) DESC)AS RANK
 	FROM    all_sessions a
 	JOIN    products p
-		    ON 	a.productsku = p.sku
+		    ON a.productsku = p.sku
 	WHERE   CAST(p.orderedquantity AS NUMERIC)<> 0 
             AND a.city<> 'not available in demo dataset' 
             AND a.city<> '(not set)' 
@@ -200,7 +200,7 @@ WITH CTE as (
 		    ROW_NUMBER() OVER (PARTITION BY a.city ORDER BY SUM(CAST(p.orderedquantity AS NUMERIC)) DESC)AS RANK
 	FROM    all_sessions a
 	JOIN    products p
-		    ON 	a.productsku = p.sku
+		    ON a.productsku = p.sku
 	WHERE   CAST(p.orderedquantity AS NUMERIC)<> 0 
             AND a.city<> 'not available in demo dataset' 
             AND a.city<> '(not set)' 
@@ -224,7 +224,7 @@ WITH CTE as (
 		    ROW_NUMBER() OVER (PARTITION BY a.country ORDER BY SUM(CAST(p.orderedquantity AS NUMERIC)) DESC)AS RANK
 	FROM    all_sessions a
 	JOIN    products p
-		    ON 	a.productsku = p.sku
+		    ON a.productsku = p.sku
 	WHERE   CAST(p.orderedquantity AS NUMERIC)<> 0 
             AND a.country<> 'not available in demo dataset' 
             AND a.country<> '(not set)' 
@@ -247,7 +247,7 @@ WITH CTE as (
 		    ROW_NUMBER() OVER (PARTITION BY a.country ORDER BY SUM(CAST(p.orderedquantity AS NUMERIC)) DESC)AS RANK
 	FROM    all_sessions a
 	JOIN    products p
-		    ON 	a.productsku = p.sku
+		    ON a.productsku = p.sku
 	WHERE   CAST(p.orderedquantity AS NUMERIC)<> 0 
             AND a.country<> 'not available in demo dataset' 
             AND a.country<> '(not set)' 

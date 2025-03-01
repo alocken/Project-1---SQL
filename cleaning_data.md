@@ -33,7 +33,7 @@ FROM 	all_sessions
 
 ```
 SELECT 	*,
-		CAST(productprice AS NUMERIC)/ 1000000 AS NUMERIC
+    CAST(productprice AS NUMERIC)/ 1000000 AS NUMERIC
 FROM 	all_sessions
 ```
 
@@ -61,7 +61,9 @@ FROM                analytics
 
 **I used this query to check and confirm no NULL values in country (example demostrates query for locating missing 'country' column values under 'all_sessions' table):**
 
+```
 SELECT  *
 FROM    all_sessions
 WHERE   country IS NULL
+```
 
