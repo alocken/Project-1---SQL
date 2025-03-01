@@ -46,21 +46,8 @@ GROUP BY s.country, s.date, s.type, a.visitid
 ORDER BY totalvisits DESC;
 ```
 
-Answer: Event is observed to be the most frequent type observed. 
+Answer: Event is observed to be the most frequent type. 
 
 ![alt text](image-16.png)
 
 
-Question 4: 
-
-SQL Queries:
-
-Answer:
-
-
-
-Question 5: 
-
-SQL Queries:
-
-Answer:
