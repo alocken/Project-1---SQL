@@ -49,11 +49,11 @@ ORDER BY transactionrevenue DESC;
 
 Answer:
 
-*Cities with highest level of transaction revenues:*
+*Cities with highest level of transaction revenues: As per the data below, the cities with the highest level of transaction revenue were City Unavailable, Mountain View, and New York. Additional cities listed in descending transaction revenue detailed in the data below.*
 
 ![alt text](image.png)
 
-*Countries with highest level of transaction revenues:*
+*Countries with highest level of transaction revenues: As per the data below, the countries with the highest level of transaction revenue were United States, United Kingdom, and Canada. Additional countries listed in descending transaction revenue detailed in the data below.*
 
 ![alt text](image-1.png)
 
@@ -96,11 +96,11 @@ ORDER BY averageordered DESC;
 
 Answer:
 
-*Average number of products ordered from visitors in each city:*
+*Average number of products ordered from visitors in each city has been presented in the data below:*
 
 ![alt text](image-3.png)
 
-*Average number of products ordered from visitors in each country:*
+*Average number of products ordered from visitors in each country has been presented in the data below::*
 
 ![alt text](image-2.png)
 
@@ -263,6 +263,8 @@ ORDER BY orderedquantity DESC;
 
 Answer:
 
+*The top-selling product from each city/country has been determined and presented in the first two data tables below. Additionally, top selling product by ordered quantity to determine highest selling country has also been completed as an additional step and those findings are presented in the final two data table below.*
+
 Patterns worth noting in the products sold:
 1) Significant representation of Google and YouTube products in the top rank for many cities 
 2) Significant representation of YoutTibe products in the top rank for many countries 
@@ -271,10 +273,12 @@ Patterns worth noting in the products sold:
 5) Nest Cam Indoor Security Camera - USA and Google Kick Ball are top product names ordered for all cities. 
 6) Google Kick Ball and Youtube Custom Decals are top product names ordered for all countries.
 
+*Top-selling product from each city/country:*
 ![alt text](image-11.png)
 
 ![alt text](image-6.png)
 
+*Top selling product by ordered quantity to determine highest selling country:*
 ![alt text](image-9.png)
 
 ![alt text](image-8.png)
