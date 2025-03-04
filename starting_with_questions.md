@@ -273,12 +273,15 @@ Patterns worth noting in the products sold:
 5) Nest Cam Indoor Security Camera - USA and Google Kick Ball are top product names ordered for all cities. 
 6) Google Kick Ball and Youtube Custom Decals are top product names ordered for all countries.
 
+
 *Top-selling product from each city/country:*
+
 ![alt text](image-11.png)
 
 ![alt text](image-6.png)
 
 *Top selling product by ordered quantity to determine highest selling country:*
+
 ![alt text](image-9.png)
 
 ![alt text](image-8.png)
