@@ -47,7 +47,7 @@ GROUP BY s.country, s.date, s.type, a.visitid
 ORDER BY totalvisits DESC;
 ```
 
-Answer: "Event" is observed to be the most frequent type. 
+Answer: "Page" is observed to be the most frequent type. 
 
 ![alt text](<Start Data - Q3.png>)
 
