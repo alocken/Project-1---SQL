@@ -1,7 +1,7 @@
 # Final-Project-Transforming-and-Analyzing-Data-with-SQL
 
 ## Project/Goals
-Focused on the learning that we have acheived throughout our time in the Data Science Flex course, this project brings together and tests SQL knowledge. The goals of this project are to complete a series of steps, including development of queries, to answer and also create questions on the ecommerce database as well as to complete QA and cleaning of the data. This project requires use of both entry and more advanced SQL queries to complete and provide responses to key questions that explore the data in the ecommerce database. 
+Focused on the learning that we have achieved throughout our time in the Data Science Flex course, this project brings together and tests SQL knowledge. The goals of this project are to complete a series of steps, including development of queries, to answer and also create questions on the ecommerce database as well as to complete QA and cleaning of the data. This project requires use of both entry and more advanced SQL queries to complete and provide responses to key questions that explore the data in the ecommerce database. 
 
 Goals were to enhance understanding and knowledge of the ecommerce database through exploration and queries to build on developed skills to be able to transform data to answer complex questions. 
 
@@ -14,7 +14,7 @@ Goals were to enhance understanding and knowledge of the ecommerce database thro
 - realized that each column will require to have all lowercase, updated columns manually to reflect this observation
 - reviewed the data in PostGresSQL to become familiar with what was available within each set and noted immediate areas of issue (e.g, null values, incomplete columns, etc.)
 ### Completed Part 2: Data Cleaning 
-- oriented with the ecommerce database and identified potental issues that needed to be cleaned
+- oriented with the ecommerce database and identified potential issues that needed to be cleaned
 - completed the necessary queries to clean required data for the assignment and recorded the issues addressed into the cleaning_data.md file
 ### Completed Part 3: Starting with Questions
 - explored and identified the data required to answer the questions (5) presented 
@@ -28,19 +28,19 @@ Goals were to enhance understanding and knowledge of the ecommerce database thro
 - copied over the queries and supporting answers to VScode, CMD, and then pushed to GitHub
 ### Completed Part 5: QA your data
 - completed a QA process that identified and described risk areas
-- developed and executred a QA process to address those areas and validate accuracy of results
+- developed and executed a QA process to address those areas and validate accuracy of results
 ### Completed Part 6: Generate ERD 
 - within pgAdmin, generated the ERD for the database after identifying primary keys for each table 
 - downloaded the image and saved as schema.png and added to repo for submission
-### Completed Final Additons to README file and Updated .PNG Files Naming Conventions
+### Completed Final Additions to README file & Updated .PNG Files Naming Conventions
 - reviewed and updated the README file for final edits and additions
 - finalized README file 
-- Updated .png files in both starting with data and starting with questions files; updated the naming conventions for all .png files to naming conventions that outlined the question the file was answering
+- updated .png files in both starting with data and starting with questions files; updated the naming conventions for all .png files to naming conventions that outlined the question the file was answering
 
 ## Results
-This data can provide information to answer questions on things such as highest revenue of countries/cities, top selling countries/cities, average products ordered by cities/countries, products odered from cities/countries, and understanding the highest ordered products for countries/cities. 
+This data can provide information to answer questions on things such as highest revenue of countries/cities, top selling countries/cities, average products ordered by cities/countries, products ordered from cities/countries, and understanding the highest ordered products for countries/cities. 
 
-Althought not requested, this data could also answer other types of questions such as queries regarding stock levels and stock time and how long it would take to restock out of stock product or determining highest volume of visitors by date/country/city and type of visit most frequently associated with the visits.
+Although not requested, this data could also answer other types of questions such as queries regarding stock levels and stock time and how long it would take to restock out of stock product or determining highest volume of visitors by date/country/city and type of visit most frequently associated with the visits.
 
 
 ## Challenges 

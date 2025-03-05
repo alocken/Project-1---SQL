@@ -1,7 +1,7 @@
 What issues will you address by cleaning the data?
 
-- Updated the countries/cities to remove invalid entries replacing with a single entry speaking to data being unavailable. Selected this process as the data associated with the unavailable data, such as revenue, was still improtant to reflect and not remove from the set. 
-- Updated the product price from text (when loaded data, loaded column as text) and also turned the amounts into an anount that reflects actual dollars for readability and accuracy. 
+- Updated the countries/cities to remove invalid entries replacing with a single entry speaking to data being unavailable. Selected this process as the data associated with the unavailable data, such as revenue, was still important to reflect and not remove from the set. 
+- Updated the product price from text (when loaded data, loaded column as text) and also turned the amounts into an amount that reflects actual dollars for readability and accuracy. 
 - Update ordered quantity from text to numeric. 
 - Viewed all columns in each of the 5 uploaded CSV tables to identify areas of discrepancy and invalid entries - also supported identifying the need to update column titles to remove and upper case letters to ensure all lower case to run queries. 
 - Checked for and identified duplicate and Null values for key data to use in queries (identified to update to ensure usability)

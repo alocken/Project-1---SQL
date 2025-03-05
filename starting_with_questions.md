@@ -156,8 +156,8 @@ Answer:
 
 There are a few noteworthy patterns observed when viewing the results from the queries returning the types of products ordered from visitors in each country:
 1) Almost all cities have home product types in the products ordered.
-2) United states is the highest volume orders per product type for almost all categories listed indicating the United States is the higest consumer of ordered products from this particular site.
-3) Significant volume of product types in 'Home' product types while other product types observed to be realtively limitedlimited or low in comparison.
+2) United States is the highest volume orders per product type for almost all categories listed indicating the United States is the highest consumer of ordered products from this particular site.
+3) Significant volume of product types in 'Home' product types while other product types observed to be relatively limited or low in comparison.
 
 ![
 ](<Start Questions - Q3 - part 1.png>)
@@ -270,11 +270,11 @@ Answer:
 
 Patterns worth noting in the products sold:
 1) Significant representation of Google and YouTube products in the top rank for many cities 
-2) Significant representation of YoutTibe products in the top rank for many countries 
+2) Significant representation of YouTube products in the top rank for many countries 
 3) Of all cities, Mountainview had the highest ordered quantity of all cities with the productname Nest Cam Indoor Security Camera - USA. 
 4) Of all countries, United States had the highest ordered quantity of all countries with the productname Google Kick Ball.
 5) Nest Cam Indoor Security Camera - USA and Google Kick Ball are top product names ordered for all cities. 
-6) Google Kick Ball and Youtube Custom Decals are top product names ordered for all countries.
+6) Google Kick Ball and YouTube Custom Decals are top product names ordered for all countries.
 
 
 *Top-selling product from each city/country:*
@@ -339,7 +339,7 @@ ORDER BY impactrevenue DESC;
 
 Answer:
 
-Yes, we can summarize the impact revenue from each city/country by generating the total revenue. The higher the revenue for a city/country, the assumption would be that there is a greater impact revenue. This would also depend on the overall revenue of a country. For example, if a country is quite small and has a signficant amount of revenue, there may be a greater impact than a country that is vast with significant revenue also having the same significant amount of revenue. These additional considerations, or parameters, are not fully known or possible to determine in this dataset but we are able to generate a table the demonstrates revenue for each country in descending order. It can be observed that the United States has the highest impact revenue, given the limitations in data, and the city with the highest revenue is actually unavailable. Given the volume of revenue in the unknown city, it can be assumed it is within the United States but this is not possible to confirm. 
+Yes, we can summarize the impact revenue from each city/country by generating the total revenue. The higher the revenue for a city/country, the assumption would be that there is a greater impact revenue. This would also depend on the overall revenue of a country. For example, if a country is quite small and has a significant amount of revenue, there may be a greater impact than a country that is vast with significant revenue also having the same significant amount of revenue. These additional considerations, or parameters, are not fully known or possible to determine in this dataset but we are able to generate a table the demonstrates revenue for each country in descending order. It can be observed that the United States has the highest impact revenue, given the limitations in data, and the city with the highest revenue is unavailable. Given the volume of revenue in the unknown city, it can be assumed it is within the United States, but this is not possible to confirm. 
 
 ![alt text](<Start Questions - Q5 - Cities.png>)
 

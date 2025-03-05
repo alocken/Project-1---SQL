@@ -29,7 +29,7 @@ GROUP BY s.country, s.date, a.visitid
 ORDER BY totalvisits DESC;
 ```
 
-Answer: The United States held the highes total visits with 292 on 2017-07-14. Also, the United States was often the highest total visits for many of the dates observed.
+Answer: The United States held the highest total visits with 292 on 2017-07-14. Also, the United States was often the highest total visits for many of the dates observed.
 
 ![
 ](<Start Data - Q2.png>)
@@ -47,7 +47,7 @@ GROUP BY s.country, s.date, s.type, a.visitid
 ORDER BY totalvisits DESC;
 ```
 
-Answer: Event is observed to be the most frequent type. 
+Answer: "Event" is observed to be the most frequent type. 
 
 ![alt text](<Start Data - Q3.png>)
 
