@@ -51,11 +51,12 @@ Answer:
 
 *Cities with highest level of transaction revenues: As per the data below, the cities with the highest level of transaction revenue were City Unavailable, Mountain View, and New York. Additional cities listed in descending transaction revenue detailed in the data below.*
 
-![alt text](image.png)
+![
+](<Start Questions - Q1 - Cities.png>)
 
 *Countries with highest level of transaction revenues: As per the data below, the countries with the highest level of transaction revenue were United States, United Kingdom, and Canada. Additional countries listed in descending transaction revenue detailed in the data below.*
 
-![alt text](image-1.png)
+![alt text](<Start Questions - Q1 - Countries.png>)
 
 **Question 2: What is the average number of products ordered from visitors in each city and country?**
 
@@ -98,11 +99,11 @@ Answer:
 
 *Average number of products ordered from visitors in each city has been presented in the data below:*
 
-![alt text](image-3.png)
+![alt text](<Start Questions - Q2 - Cities.png>)
 
 *Average number of products ordered from visitors in each country has been presented in the data below::*
 
-![alt text](image-2.png)
+![alt text](<Start Questions - Q2 - Countries.png>)
 
 
 
@@ -158,9 +159,11 @@ There are a few noteworthy patterns observed when viewing the results from the q
 2) United states is the highest volume orders per product type for almost all categories listed indicating the United States is the higest consumer of ordered products from this particular site.
 3) Significant volume of product types in 'Home' product types while other product types observed to be realtively limitedlimited or low in comparison.
 
-![alt text](image-4.png)
+![
+](<Start Questions - Q3 - part 1.png>)
 
-![alt text](image-5.png)
+![alt text](<Start Questions - Q3 - part 2.png>)
+
 
 **Question 4: What is the top-selling product from each city/country? Can we find any pattern worthy of noting in the products sold?**
 
@@ -276,17 +279,15 @@ Patterns worth noting in the products sold:
 
 *Top-selling product from each city/country:*
 
-![alt text](image-11.png)
+![alt text](<Start Questions - Q4 - Top Product Cities.png>)
 
-![alt text](image-6.png)
+![alt text](<Start Questions - Q4 - Top Product Countries.png>)
 
-*Top selling product by ordered quantity to determine highest selling country:*
+*Top selling product by ordered quantity to determine highest selling city/country:*
 
-![alt text](image-9.png)
+![alt text](<Start Questions - Q4 - Top ordered Quantity Cities.png>)
 
-![alt text](image-8.png)
-
-
+![alt text](<Start Questions - Q4 - Top Ordered Quantity Countries.png>)
 
 **Question 5: Can we summarize the impact of revenue generated from each city/country?**
 
@@ -340,9 +341,9 @@ Answer:
 
 Yes, we can summarize the impact revenue from each city/country by generating the total revenue. The higher the revenue for a city/country, the assumption would be that there is a greater impact revenue. This would also depend on the overall revenue of a country. For example, if a country is quite small and has a signficant amount of revenue, there may be a greater impact than a country that is vast with significant revenue also having the same significant amount of revenue. These additional considerations, or parameters, are not fully known or possible to determine in this dataset but we are able to generate a table the demonstrates revenue for each country in descending order. It can be observed that the United States has the highest impact revenue, given the limitations in data, and the city with the highest revenue is actually unavailable. Given the volume of revenue in the unknown city, it can be assumed it is within the United States but this is not possible to confirm. 
 
-![alt text](image-12.png)
+![alt text](<Start Questions - Q5 - Cities.png>)
 
-![alt text](image-13.png)
+![alt text](<Start Questions - Q5 - Countries.png>)
 
 
 
