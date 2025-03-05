@@ -32,9 +32,10 @@ Goals were to enhance understanding and knowledge of the ecommerce database thro
 ### Completed Part 6: Generate ERD 
 - within pgAdmin, generated the ERD for the database after identifying primary keys for each table 
 - downloaded the image and saved as schema.png and added to repo for submission
-### Completed Final Additons to README file 
+### Completed Final Additons to README file and Updated .PNG Files Naming Conventions
 - reviewed and updated the README file for final edits and additions
 - finalized README file 
+- Updated .png files in both starting with data and starting with questions files; updated the naming conventions for all .png files to naming conventions that outlined the question the file was answering.
 
 ## Results
 This data can provide information to answer questions on things such as highest revenue of countries/cities, top selling countries/cities, average products ordered by cities/countries, products odered from cities/countries, and understanding the highest ordered products for countries/cities. 
