@@ -1,10 +1,10 @@
 What are your risk areas? Identify and describe them.
 
-Data completeness (e.g., NULL or missing values) - this is when key values were either missing or unavailble to accurately query data.
+- Data completeness (e.g., NULL or missing values) - this is when key values were either missing or unavailble to accurately query data.
 
-Data duplication (e.g., row duplication) - this is when there are multiple representations of the same or single data entry. 
+- Data duplication (e.g., row duplication) - this is when there are multiple representations of the same or single data entry. 
 
-Outlier values (e.g., dates out of appropriate range or potentially outdated) - this is when there are data entries that are outliers or appear to be out of the appropriat range for use. 
+- Outlier values (e.g., dates out of appropriate range or potentially outdated) - this is when there are data entries that are outliers or appear to be out of the appropriat range for use. 
 
 QA Process:
 Describe your QA process and include the SQL queries used to execute it.
