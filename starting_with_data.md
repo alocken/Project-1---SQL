@@ -13,7 +13,7 @@ ORDER BY totalvisits DESC;
 Answer: 
 2017-07-31 had the highest total visits with 1033. 
 
-![alt text](image-14.png)
+![alt text](<Start Data - Q1.png>)
 
 
 Question 2: Determine total visits per country per date. Which country held the highest total visits? Are there any noteworthy patterns in the frequency of countries listed?
@@ -31,7 +31,8 @@ ORDER BY totalvisits DESC;
 
 Answer: The United States held the highes total visits with 292 on 2017-07-14. Also, the United States was often the highest total visits for many of the dates observed.
 
-![alt text](image-15.png)
+![
+](<Start Data - Q2.png>)
 
 Question 3: List the type of visits associated with the countries with the highest total visits per date. What is observed to be the most frequent type? 
 
@@ -48,6 +49,6 @@ ORDER BY totalvisits DESC;
 
 Answer: Event is observed to be the most frequent type. 
 
-![alt text](image-16.png)
+![alt text](<Start Data - Q3.png>)
 
 
